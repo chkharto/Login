@@ -1,0 +1,120 @@
+:root {
+    --neon-color: #A5F1E9;
+    --white-color: #fff;
+    --main-bacco: #051527;
+    --light-bacco: #0A2647;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 550px;
+    background: transparent;
+    border: 4px solid var(--light-bacco);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.wrapper form h2 {
+    margin-top: -3px;
+    background-color: #131230;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 70px 70px 0 0;
+}
+
+button {
+    margin: 3px;
+    padding: 2px;
+    color: white;
+    background-color: rgb(255, 43, 43);
+    width: 250px;
+    height: 36px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 26, 14, 0.727);
+}
+
+marquee{
+    margin-top: -400px;
+    position: absolute;
+    color: white;
+}
+
+.input-box input[type="email"]{
+    color: white;
+}
+
+.input-box input[type="password"]{
+    color: white;
+}
+
+.forgot-password a{
+    color: rgb(4, 0, 255);
+    margin: 5px;
+    text-decoration: none;
+}
+
+.forgot-password {
+    margin-top: 5px;
+}
+
+.registration-link a{
+    text-decoration: none;
+    color: rgb(4, 0, 255);
+}
+
+.wrapper:hover {
+    border: 4px solid #00FFD1;
+    box-shadow: 0 0 20px #00FFD1,
+            inset 0 0 20px #31C6D4;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: var(--white-color);
+    transition: 0.5s;
+}
+
+.wrapper:hover {
+    color: #FFFF00;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    background: transparent;
+    border: 2px solid var(--light-bacco);
+    outline: none;
+    font-size: 0 10px 0 35px;
+    transition: 0.5s;
+}
+
+.wrapper:hover .input-box input {
+    border: 2px solid #FFFF00;
+    box-shadow: 0 0 10px #FFFF00;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
